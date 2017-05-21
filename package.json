@@ -1,0 +1,19 @@
+{
+  "name": "es6-12",
+  "version": "1.0.0",
+  "main": "./dist/bundle.js",
+  "author": "Helton Carlos de Souza",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "live-server": "^1.2.0",
+    "watchify": "^3.9.0"
+  },
+  "scripts": {
+    "watchify": "watchify *.js -o dist/bundle.js -t [ babelify --presets [ es2015 ] ] -v",
+    "go": "live-server dist"
+  },
+  "repository": "https://github.com/entirc/es6-12.git",
+  "dependencies": {}
+}
